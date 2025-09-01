@@ -88,7 +88,7 @@ fun InstagramAnalyzerApp() {
                         password = password,
                         two_factor_code = if (requireTwoFactor) twoFactorCode else null
                     )
-                    val response: AnalyzeResponse = client.post("http://192.168.1.135:8000/analyze/") {
+                    val response: AnalyzeResponse = client.post("https://instalangran-backend.onrender.com/analyze") {
                         headers {
                             append("Content-Type", "application/json")
                         }
